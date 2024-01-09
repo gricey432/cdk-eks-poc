@@ -1,14 +1,7 @@
-# Welcome to your CDK TypeScript project
+# EKS Cluster without Custom Resource
 
-This is a blank project for CDK development with TypeScript.
+A quick proof of concept for using the new EKS Access Entries to create a cluster with working kubectl lambda.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+This avoids the issue with "principal who created cluster starts as only admin" forcing CDK to make a custom resource.
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+To execute this you'll need to fill in the env and vpcId in `bin/cdk-eks-poc.ts`.

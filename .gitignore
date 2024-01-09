@@ -6,3 +6,9 @@ node_modules
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# Stuff to not make public
+cdk.context.json
+
+# IDE
+.idea
